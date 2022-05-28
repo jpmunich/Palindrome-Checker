@@ -1,0 +1,15 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(160, 226, 190);
+}
+#header {
+    text-align: center;
+}
+
+#input-container {
+    height: 300px;
+    width: 50%;
+    background-color: grey;
+    margin: 0 auto 0 auto;
+}
+
