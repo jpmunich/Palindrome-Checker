@@ -1,5 +1,6 @@
-userInput = document.getElementById("palindrome");
+userInput = document.getElementById("input");
 button = document.getElementById("palindrome-button");
+container = document.getElementById("input-container");
 
 // Function that takes an input and checks if the input is a palindrome
 function checkPalindrome(input) {
@@ -10,15 +11,16 @@ function checkPalindrome(input) {
     reverseInput = reverseInput.split('').reverse().join('');
 
     if (reverseInput === input) {
-        console.log("hello");
         return "Is a palindrome";
     }
-    console.log("bye");
     return "Not a palindrome";
 }
 // Function exists only to allow an argument to be passed through the event listener.
 function hello (){
-    checkPalindrome(userInput.value);
+    const newDiv = document.createElement("div");
+    container.appendChild(newDiv);
+    const newTextNode = document.createTextNode(checkPalindrome(userInput.value));
+    newDiv.appendChild(newTextNode);
 }
 
 button.addEventListener("click", hello);
