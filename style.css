@@ -2,15 +2,24 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(160, 226, 190);
 }
-#header {
+.header {
     text-align: center;
+    color:rgba(0, 0, 0, 70%);
+    border: 5px;
+    border-color: rgba(0, 0, 0, 50%);
 }
 
 #input-container {
     height: 300px;
     width: 50%;
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 30%);
     margin: 0 auto 0 auto;
+    padding: 10px 0px 0px 0px;
+}
+
+#palindrome-label {
+    position: relative;
+    padding-left: 10%;
 }
 
 #input {
@@ -18,10 +27,21 @@ body {
     width: 80%;
 }
 
+#palindrome-button {
+    height: 30px;
+    width: 75%;
+    background-color: rgb(160, 226, 190);
+    border-color: rgb(123, 211, 163);
+}
+
 .inside-input-container {
-    position: relative;
-    left: 10%;
-    top: 5%;
-    margin-bottom: 5px;
     display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 7.5px 0px 7.5px 0px;
+}
+
+#palindromeStatusDiv {
+    text-align: center;
 }
